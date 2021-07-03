@@ -1,23 +1,14 @@
 import { React } from 'react';
 import './App.scss';
-import { Button } from '@material-ui/core';
+import ButtonInput from './components/button';
+import SelectInput from './components/selectInput';
+import context from './core/context';
 
 const App = () =>
 	<div className="App">
-		<Button color="primary">Hello World</Button>
-		<Button variant="contained">Default</Button>
-		<Button variant="contained" color="primary">
-			Primary
-		</Button>
-		<Button variant="contained" color="secondary">
-			Secondary
-		</Button>
-		<Button variant="contained" disabled="disabled">
-			Disabled
-		</Button>
-		<Button variant="contained" color="primary" href="#contained-buttons">
-			Link
-		</Button>
+		{ButtonInput()}
+		{SelectInput()}
+		{context.state.text}
 	</div>;
 
 export default App;
