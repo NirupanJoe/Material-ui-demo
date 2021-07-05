@@ -5,6 +5,10 @@
 	.container {
 			display: flex;
 			justify-content: space-between;
+		.MuiSvgIcon-root{
+			position: absolute;
+			right: 9%;
+		}
 	}
 	.btn {
 		display: flex;

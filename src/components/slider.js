@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Slider } from '@material-ui/core';
+import FormatSizeSharpIcon from '@material-ui/icons/FormatSizeSharp';
 import context from '../core/context';
 
 const VolumeSlider = () =>
@@ -7,6 +8,7 @@ const VolumeSlider = () =>
 		<Typography id="continuous-slider">
 			FontSize
 		</Typography>
+		<FormatSizeSharpIcon/>
 		<Slider
 			value={ context.state.fontSize }
 			onChange={ (dummy, newValue) => context.actions
