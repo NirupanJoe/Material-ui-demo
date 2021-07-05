@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Button } from '@material-ui/core';
 
 const ButtonInput = () =>
-	<div>
+	<div className="btn">
 		<Button color="primary">Hello World</Button>
 		<Button variant="contained">Default</Button>
 		<Button variant="contained" color="primary">

@@ -7,6 +7,7 @@ const seed = {
 	count: config.countStart,
 	refreshID: rndString(refreshIDLength),
 	text: config.texts[0],
+	switch: false,
 };
 
 export default seed;
