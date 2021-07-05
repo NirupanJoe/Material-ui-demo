@@ -8,6 +8,7 @@ const seed = {
 	refreshID: rndString(refreshIDLength),
 	text: config.texts[0],
 	switch: false,
+	fontSize: 10,
 };
 
 export default seed;

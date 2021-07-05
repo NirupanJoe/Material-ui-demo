@@ -8,11 +8,15 @@ const selectInput = ({ data }) => ({
 const switchButton = ({ data }) => ({
 	switch: data,
 });
+const slide = ({ data }) => ({
+	fontSize: data,
+});
 
 const actions = {
 	increaseCount,
 	selectInput,
 	switchButton,
+	slide,
 };
 
 export default actions;
