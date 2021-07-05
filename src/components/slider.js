@@ -11,6 +11,9 @@ const VolumeSlider = () =>
 			value={ context.state.fontSize }
 			onChange={ (dummy, newValue) => context.actions
 				.slide(newValue) }
+			min={ 10 }
+			max={ 25 }
+			valueLabelDisplay="auto"
 		/>
 	</div>;
 
