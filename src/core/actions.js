@@ -11,12 +11,16 @@ const switchButton = ({ data }) => ({
 const slide = ({ data }) => ({
 	fontSize: data,
 });
+const radioButton = ({ data }) => ({
+	switch: data === 'true',
+});
 
 const actions = {
 	increaseCount,
 	selectInput,
 	switchButton,
 	slide,
+	radioButton,
 };
 
 export default actions;

@@ -8,7 +8,7 @@ const VolumeSlider = () =>
 		<Typography id="continuous-slider">
 			FontSize
 		</Typography>
-		<FormatSizeSharpIcon/>
+		<span id="MuiSvgIcon-root"><FormatSizeSharpIcon/></span>
 		<Slider
 			value={ context.state.fontSize }
 			onChange={ (dummy, newValue) => context.actions
