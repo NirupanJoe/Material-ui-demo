@@ -3,20 +3,20 @@ import { Typography, Slider } from '@material-ui/core';
 import FormatSizeSharpIcon from '@material-ui/icons/FormatSizeSharp';
 import context from '../core/context';
 
-const VolumeSlider = () =>
-	<div>
-		<Typography id="continuous-slider">
+const FontSlider = () =>
+	<span>
+		<Typography>
 			FontSize
 		</Typography>
 		<span id="MuiSvgIcon-root"><FormatSizeSharpIcon/></span>
 		<Slider
 			value={ context.state.fontSize }
 			onChange={ (dummy, newValue) => context.actions
-				.slide(newValue) }
+				.setFontSize(newValue) }
 			min={ 10 }
 			max={ 25 }
 			valueLabelDisplay="auto"
 		/>
-	</div>;
+	</span>;
 
-export default VolumeSlider;
+export default FontSlider;

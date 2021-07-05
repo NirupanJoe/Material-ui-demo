@@ -7,7 +7,7 @@ const RadioButton = () =>
 	<FormControl component="fieldset">
 		<FormLabel component="legend">SwitchControl</FormLabel>
 		<RadioGroup
-			value={ String(context.state.switch) }
+			value={ String(context.state.theme) }
 			onChange={ (evt) => context.actions.radioButton(evt.target.value) }
 		>
 			<FormControlLabel

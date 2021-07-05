@@ -6,20 +6,20 @@ const selectInput = ({ data }) => ({
 	text: data,
 });
 const switchButton = ({ data }) => ({
-	switch: data,
+	theme: data,
 });
-const slide = ({ data }) => ({
+const setFontSize = ({ data }) => ({
 	fontSize: data,
 });
 const radioButton = ({ data }) => ({
-	switch: data === 'true',
+	theme: data === 'true',
 });
 
 const actions = {
 	increaseCount,
 	selectInput,
 	switchButton,
-	slide,
+	setFontSize,
 	radioButton,
 };
 

@@ -5,6 +5,7 @@
 	.container {
 			display: flex;
 			justify-content: space-between;
+			align-items: baseline;
 		#MuiSvgIcon-root{
 			position: absolute;
 			right: 9%;
@@ -12,8 +13,8 @@
 	}
 	.btn {
 		display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	button {
 		font-weight: bold;

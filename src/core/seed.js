@@ -7,8 +7,8 @@ const seed = {
 	count: config.countStart,
 	refreshID: rndString(refreshIDLength),
 	text: config.texts[0],
-	switch: false,
-	fontSize: 10,
+	theme: false,
+	fontSize: config.fontSize,
 };
 
 export default seed;

@@ -3,27 +3,29 @@ import './App.scss';
 import ButtonInput from './components/button';
 import RadioButton from './components/radioButton';
 import SelectInput from './components/selectInput';
-import VolumeSlider from './components/slider';
+import FontSlider from './components/slider';
 import SwitchButton from './components/switchButton';
 import context from './core/context';
 
-const App = () => {
-	// eslint-disable-next-line no-console
-	console.log(context.state);
-	return (
-		<div
-			style={ { fontSize: `${ context.state.fontSize }px` } }
-			className={ `App ${ context.state.switch ? 'dark' : 'lite' }` }
-		>
-			<div className="container">
-				{ButtonInput()}
-				{SelectInput()}
-				{context.state.text}
-				<div>{SwitchButton()}</div>
-				<div>{RadioButton()}</div>
-				{VolumeSlider()}
-			</div>
-		</div>);
-};
+const theme = () => `App ${ context.state.theme ? 'dark' : 'lite' }`;
+
+const StyleFont = () => ({
+	fontSize: `${ context.state.fontSize }px`,
+});
+
+const App = () =>
+	<div
+		style={ StyleFont() }
+		className={ theme() }
+	>
+		<div className="container">
+			<div>{ButtonInput()}</div>
+			<div>{SelectInput()}</div>
+			<div>{context.state.text}</div>
+			<div>{SwitchButton()}</div>
+			<div>{RadioButton()}</div>
+			<div>{FontSlider()}</div>
+		</div>
+	</div>;
 
 export default App;

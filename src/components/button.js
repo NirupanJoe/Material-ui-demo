@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Button } from '@material-ui/core';
 
 const ButtonInput = () =>
-	<div className="btn">
+	<span className="btn">
 		<Button color="primary">Hello World</Button>
 		<Button variant="contained">Default</Button>
 		<Button variant="contained" color="primary">
@@ -14,6 +14,6 @@ const ButtonInput = () =>
 		<Button variant="contained" color="primary" href="#contained-buttons">
 			Link
 		</Button>
-	</div>;
+	</span>;
 
 export default ButtonInput;

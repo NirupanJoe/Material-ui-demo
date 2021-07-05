@@ -6,7 +6,7 @@ const SwitchButton = () =>
 	<FormControlLabel
 		control={
 			<Switch
-				checked={ context.state.switch }
+				checked={ context.state.theme }
 				onChange={ (evt) => context.actions
 					.switchButton(evt.target.checked) }
 			/>
