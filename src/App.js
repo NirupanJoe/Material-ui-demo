@@ -1,10 +1,13 @@
+import { Button } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 import { React } from 'react';
 import './App.scss';
-import Style from './components/style';
+import liteTheme from './components/style/light';
 
 const App = () =>
-	<div>
-		{Style()}
-	</div>;
+	<ThemeProvider theme={ liteTheme }>
+		<Button variant="contained" color="primary">primary</Button>
+		<Button color="secondary">secondary</Button>
+	</ThemeProvider>;
 
 export default App;
