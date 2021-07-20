@@ -1,10 +1,10 @@
 import React from 'react';
-import { Typography, Slider } from '@material-ui/core';
+import { Typography, Slider, Box } from '@material-ui/core';
 import FormatSizeSharpIcon from '@material-ui/icons/FormatSizeSharp';
 import context from '../core/context';
 
 const FontSlider = () =>
-	<span>
+	<Box component="span">
 		<Typography>
 			FontSize
 		</Typography>
@@ -17,6 +17,6 @@ const FontSlider = () =>
 			max={ 25 }
 			valueLabelDisplay="auto"
 		/>
-	</span>;
+	</Box>;
 
 export default FontSlider;

@@ -1,12 +1,12 @@
 import React from 'react';
-import { InputLabel, Select, MenuItem } from '@material-ui/core';
+import { InputLabel, Select, MenuItem, Box } from '@material-ui/core';
 import context from '../core/context';
 
 const Option = (text) =>
 	<MenuItem key={ text } value={ text }>{text}</MenuItem>;
 
 const SelectInput = () =>
-	<span>
+	<Box component="span">
 		<InputLabel id="demo-simple-select-label">Text</InputLabel>
 		<Select
 			labelId="demo-simple-select-label"
@@ -16,6 +16,6 @@ const SelectInput = () =>
 		>
 			{context.config.texts.map(Option)}
 		</Select>
-	</span>;
+	</Box>;
 
 export default SelectInput;

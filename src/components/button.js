@@ -1,8 +1,8 @@
 import { React } from 'react';
-import { Button } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
 
 const ButtonInput = () =>
-	<span className="btn">
+	<Box component="span" className="btn">
 		<Button color="primary">Hello World</Button>
 		<Button variant="contained">Default</Button>
 		<Button variant="contained" color="primary">
@@ -14,6 +14,6 @@ const ButtonInput = () =>
 		<Button variant="contained" color="primary" href="#contained-buttons">
 			Link
 		</Button>
-	</span>;
+	</Box>;
 
 export default ButtonInput;
